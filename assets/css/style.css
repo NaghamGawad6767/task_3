@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+header nav, header nav .right .link, .hero, .PORTFOLIO, .star, .card,  .ABOUT, .CONTACT, .cont, .TEXT,
+.full, .email, .phone, .meesage, .ONE, .TWO, .card .ONE .photo, .card .TWO .photo2, .THREE, .card .THREE .photo3 ,
+.FOUR, .card .FOUR .photo4, .FIVE, .card .FIVE .photo5, .SIX, .card .SIX .photo6, .box, footer, .ICON, .face
+{
+    display: flex;
+}
+.hero, .PORTFOLIO, .ABOUT, .CONTACT, .cont, .ONE, .card .ONE .photo, .TWO, .card .TWO .photo2, .THREE, .card .THREE .photo3,
+.FOUR, .card .FOUR .photo4, .FIVE, .card .FIVE .photo5, .SIX, .card .SIX .photo6, .box, .face {
+    justify-content: center;
+}
+header nav, .hero, .PORTFOLIO, .star, .ABOUT, .CONTACT, .cont, .ONE, .card .ONE .photo, .TWO, .card .TWO .photo2, .THREE, .card .THREE .photo3,
+.FOUR, .card .FOUR .photo4, .FIVE, .card .FIVE .photo5, .SIX, .card .SIX .photo6, .box, .ICON, .face {
+    align-items: center;
+}
+.card, .TEXT {
+    justify-content: space-around;
+}
+header nav {
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 40px ;
+    background-color: rgb(44,62,80);
+    position: fixed;
+    z-index: 10;
+}
+header nav .right .link{
+    list-style: none;
+}
+header nav .right .link li{
+    margin: 0 10px;
+}
+header nav .right .link li a{
+    text-decoration: none;
+}
+header nav .left, header nav .right .link li a,h2, h4, p, .box,
+.star i, .CONTACT .send button, .face{
+    color: white;
+}
+.hero, .ABOUT, .box, .CONTACT .send button{
+    background-color: rgb(26, 188, 156);
+}
+.hero, .PORTFOLIO, .ABOUT, .CONTACT, .cont{
+    flex-direction: column; 
+}
+.hero{
+    height: 100vh;  
+}
+.hero  .IMG, .hero  .IMG img, .face{
+    border-radius: 50%;
+}
+.hero  .IMG{
+    background-color:  rgb(44,62,80);
+    margin-bottom: 20px;
+}
+.hero  .IMG img{
+    width: 200px;
+    height: 200px;
+    margin: -30px -3px -4px -3px;
+}
+h2, h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}
+.PORTFOLIO, .ABOUT, .CONTACT{
+    padding: 50px;
+}
+.PORTFOLIO, .CONTACT, footer{
+    width: 100%;
+}
+.card, footer{
+    flex-wrap: wrap;
+}
+.ONE, .TWO, .THREE, .FOUR, .FIVE, .SIX{
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    padding: 10px 10px 20px 30px;
+    margin: 10px 10px 20px 20px;
+}
+.ONE{
+    background-color: rgb(186, 76, 99);
+}
+.card .ONE .photo, .card .TWO .photo2, .card .THREE .photo3,
+.card .FOUR .photo4,.card .FIVE .photo5, .card .SIX .photo6 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding-top: 23px;
+}
+.card .ONE .photo{
+    background-color:  rgb(180, 70, 88);
+}
+.card .ONE .photo img, .card .TWO .photo2 img, .card .THREE .photo3 img,
+.card .FOUR .photo4 img, .card .FIVE .photo5 img, .card .SIX .photo6 img
+ {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -30px -3px -4px -3px;
+}
+.TWO{
+    background-color: rgb(31, 164, 182);
+}
+.card .TWO .photo2{
+    background-color:  rgb(224, 91, 73);
+}
+.THREE{
+    background-color: rgb(19, 15, 15);
+}
+.card .THREE .photo3{
+    background-color:  white;
+}
+.FOUR{
+    background-color: rgb(29, 131, 193);
+}
+.card .FOUR .photo4{
+    background-color:  rgba(255, 255, 255, 0.842);
+}
+.FIVE{
+    background-color: rgb(16, 55, 181);
+}
+.card .FIVE .photo5{
+    background-color:  rgba(190, 168, 168, 0.842);
+}
+.SIX{
+    background-color: rgb(204, 178, 163);
+}
+.card .SIX .photo6{
+    background-color:  rgba(156, 125, 125, 0.842);
+}
+.TEXT{
+    padding: 30px;
+    margin: 10px;  
+}
+.text1{
+    padding: 20px;
+}
+.box{
+    width: 180px;
+    height: 50px;
+    border-radius: 5%;
+    border: 2px solid white;
+}
+.star {
+    position: relative;
+    padding: 10px;
+} 
+.star i{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.star::before {
+    background-color: white;
+    content: "";
+    position: absolute;
+    left: -80px;
+    width: 80px;
+    height: 3px;
+}
+.PORTFOLIO .star i, .CONTACT .star i, h3{
+    color: rgb(44,62,80);
+}
+.PORTFOLIO .star::before, .PORTFOLIO .star::after,
+.CONTACT .star::before, .CONTACT .star::after {
+    background-color: rgb(44,62,80);
+}
+.star::after  {
+    background-color: white;
+    content: "";
+    position: absolute;
+    right: -80px;
+    width: 80px;
+    height: 3px;
+}
+.cont{
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+}
+.CONTACT input ,.CONTACT textarea{
+    font-size: 15px;
+    padding: 10px ;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid gray;
+    outline: none;
+    margin: 10px;
+}
+.CONTACT .send {
+    width: 50%;
+}
+.CONTACT .send button{
+    padding: 10px 15px ;
+    border:0;
+    border-radius: 5%;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+footer{
+    background-color: rgb(44,62,80);
+    justify-content: center;
+}
+footer .div1 h4 , footer .div3 h4 {
+    margin-bottom: 20px;
+} 
+footer .div2  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+footer .div2 .ICON {
+    justify-content: center;
+}
+footer div{
+    padding: 20px;
+    width: 400px;
+}
+.face{
+    border: 2px solid white;
+    width: 50px;
+    height: 50px; 
+    font-size: 30px;
+    margin: 0 10px;
+}
+.END{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    background-color: rgb(26, 37, 47);
+}
+
